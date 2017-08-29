@@ -1,0 +1,111 @@
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.3
+*/
+.owl-theme .owl-controls{
+	margin-top: 2%; text-align: center;	
+}
+/* Styling Next and Prev buttons */
+.owl-theme .owl-controls .owl-buttons div{
+	color: #FFF;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+	margin: 5px;
+	padding: 3px 10px;
+	font-size: 12px;
+	/*-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;*/
+	background: #869791;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 1;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	text-decoration: none;
+}
+/* Styling Pagination*/
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1; /*float: left;*/
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 15px;
+	height: 15px;
+	margin: 3px 3px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+}
+.owl-theme .owl-pagination{margin-top: 0;}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	background: #2094CE;
+	border-color: #2094CE;
+}
+/* If PaginationNumbers is true */
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	/*background url AjaxLoader gif no-repeat center center*/
+}
+#owl-demo .owl-controls .owl-page span{border-radius: 50%;  background-color: #308dbb;}
+#owl-demo .owl-controls .owl-page.active span,#owl-demo1 .owl-theme .owl-controls.clickable .owl-page:hover span{background-color: #fff;}
+#owl-demo1 .owl-controls .owl-page span{border-radius: 50%;  background-color: #3ea3f5;}
+#owl-demo1 .owl-controls .owl-page.active span,#owl-demo1 .owl-theme .owl-controls.clickable .owl-page:hover span{background-color: #c5e3fc;}
+/*#owl-demo2 .owl-buttons div.owl-prev{background-position: -1px -104px !important;width: 32px;text-indent: -9999px;height: 28px;position: absolute;left: -40px;top: 40% !important;}
+#owl-demo2 .owl-buttons div.owl-next{background-position: -35px -104px !important;width: 34px;text-indent: -9999px;height: 28px;position: absolute;right: -40px;top: 40% !important;}
+#owl-demo2 .owl-controls .owl-buttons div{background:none;padding: 0px;margin:0px; }*/
+
+
+
+#whyus .owl-controls .owl-buttons div{/*background: url('../images/sprite.png') no-repeat;*/padding: 0px;margin:0px; }
+#whyus .owl-buttons div.owl-prev{background: url('../images/prev.png') no-repeat;width: 24px;text-indent: -9999px;height: 9px;position: absolute;left: -50px;top: 40% !important;}
+#whyus .owl-buttons div.owl-next{background: url('../images/next.png') no-repeat;width: 24px;text-indent: -9999px;height: 9px;position: absolute;right: -50px;top: 40% !important;}
+#whyus .owl-controls .owl-page span{border-radius: 50%;  background-color: #fcaf0b;}
+#whyus .owl-controls .owl-page.active span,#owl-demo1 .owl-theme .owl-controls.clickable .owl-page:hover span{background-color: #fff;}
+
+#testim .owl-controls .owl-buttons div{background: url('../images/sprite.png') no-repeat;padding: 0px;margin:0px; }
+#testim .owl-buttons div.owl-prev{background-position: -330px -12px !important; width: 24px;text-indent: -9999px;height: 9px;position: absolute;left: -50px;top: 40% !important;}
+#testim .owl-buttons div.owl-next{background-position: -360px -12px !important; width: 24px;text-indent: -9999px;height: 9px;position: absolute;right: -50px;top: 40% !important;}
+
+
+#abtCarousel .owl-controls .owl-page span{border-radius: 50%;  background-color: #3db7ca;}
+#abtCarousel .owl-controls .owl-page.active span,#owl-demo1 .owl-theme .owl-controls.clickable .owl-page:hover span{background-color: #ededed;}
+
+
+@media only screen and (max-width: 1366px){
+
+}
+@media only screen and (max-width: 1280px){
+#whyus .owl-buttons div.owl-prev{left: -20px;}
+#whyus .owl-buttons div.owl-next{right: -20px;}
+}
+@media all and (max-width: 1024px) {
+
+}
+@media all and (max-width: 995px) {
+#whyus .owl-buttons div.owl-next{display: none;}
+#whyus .owl-buttons div.owl-prev{display: none;}
+}
+@media all and (max-width: 767px) {
+
+}
+@media all and (max-width: 479px) {
+
+}

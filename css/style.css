@@ -1,0 +1,524 @@
+@charset "utf-8";
+@font-face{font-family:'NoteraPersonalUseOnly';src:url(../fonts/NoteraPersonalUseOnly.eot?#iefix) format("embedded-opentype"),url(../fonts/NoteraPersonalUseOnly.woff) format("woff"),url(../fonts/NoteraPersonalUseOnly.ttf) format("truetype"),url(../fonts/NoteraPersonalUseOnly.svg#NoteraPersonalUseOnly) format("svg");font-weight:400;font-style:normal}
+@font-face{font-family:'PlayfairDisplay-Regular';src:url(../fonts/PlayfairDisplay-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/PlayfairDisplay-Regular.woff) format("woff"),url(../fonts/PlayfairDisplay-Regular.ttf) format("truetype"),url(../fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular) format("svg");font-weight:400;font-style:normal}
+@font-face{font-family:'Arsenal-Regular';src:url(../fonts/Arsenal-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/Arsenal-Regular.otf) format("opentype"),url(../fonts/Arsenal-Regular.woff) format("woff"),url(../fonts/Arsenal-Regular.ttf) format("truetype"),url(../fonts/Arsenal-Regular.svg#Arsenal-Regular) format("svg");font-weight:400;font-style:normal}
+@font-face{font-family:'Arsenal-Bold';src:url(../fonts/Arsenal-Bold.eot?#iefix) format("embedded-opentype"),url(../fonts/Arsenal-Bold.otf) format("opentype"),url(../fonts/Arsenal-Bold.woff) format("woff"),url(../fonts/Arsenal-Bold.ttf) format("truetype"),url(../fonts/Arsenal-Bold.svg#Arsenal-Bold) format("svg");font-weight:400;font-style:normal}
+body{width:100%;float:left;font:18px/30px Arsenal-Regular;position:relative;background:#fff}
+p{color:#666;margin:0;font:18px/30px Arsenal-Regular;letter-spacing:1px}
+strong,b{font-weight:700}
+em,i{font-style:italic}
+::selection{background-color:#ed3237;color:#fff}
+::-moz-selection{background-color:#ed3237;color:#fff}
+a{outline:0;text-decoration:none;color:#ffbf00}
+a img{border:0;text-decoration:none}
+a:hover,a:active{color:#333}
+h1,h2,h3,h4,h5,h6,p{display:block;margin:0;position:relative}
+h1{font:24px Arsenal-Regular;color:#000;letter-spacing:10px;text-transform:uppercase}
+h2{font:48px/48px Arsenal-Regular;color:#fff}
+h3{font:30px/30px Arsenal-Regular;color:#32886f}
+h4{font:24px/25px Arsenal-Regular;color:#898989}
+h5{font:15px Arsenal-Regular;text-transform:uppercase;letter-spacing:5px;color:#ea9f00}
+h6{font:16px Arsenal-Regular;color:#666}
+.clear{clear:both}
+.cf:before,.cf:after{content:"";display:table}
+.cf:after{clear:both}
+.cf{*zoom:1}
+header{width:100%;float:left;position:relative;z-index:999;background:#fff}
+.sticky{width:100%;float:left;position:fixed;z-index:999;box-shadow:1px 1px 2px 0 rgba(0,0,0,0.34)}
+section{width:100%;float:left;position:relative}
+footer{width:100%;float:left;position:relative;background:#edeaea url(../images/awards-bg.png) center center no-repeat;padding-top:100px}
+.hTop{margin-top:110px}
+.whiteClr{color:#fff}
+.wrapper{width:100%;float:left;position:relative}
+.wid50{width:50%;float:left;position:relative}
+.container{width:1170px;margin:0 auto}
+.fLeft{float:left!important}
+.fRight{float:right!important}
+.hidden{display:none}
+.nom{margin:0!important}
+.nop{padding:0!important}
+.noPl{padding-left:0!important}
+.noPr{padding-right:0!important}
+.nopt{padding-top:0!important}
+.nopb{padding-bottom:0!important}
+.noBrdr{border:none!important}
+.dIb{display:inline-block}
+.dIt{display:inline-table}
+.tAc{text-align:center}
+.tAr{text-align:right}
+.tAl{text-align:left}
+.tUp{text-transform:uppercase}
+.posR{position:relative}
+.imgDiv img{width:100%}
+.comnPad{padding:60px 0}
+.banner_div{width:100%;float:left;position:relative}
+.banner_div img{width:100%}
+.pb5{padding-bottom:5px!important}
+.pt10{padding-top:10px!important}
+.pb10{padding-bottom:10px!important}
+.pt20{padding-top:20px}
+.pb20{padding-bottom:20px}
+.pt30{padding-top:30px}
+.pt40{padding-top:40px}
+.pb40{padding-bottom:40px}
+.pt50{padding-top:50px}
+.pb50{padding-bottom:50px}
+.pt60{padding-top:60px}
+.pb60{padding-bottom:60px}
+.pt80{padding-top:80px}
+.pb80{padding-bottom:80px}
+.pt100{padding-top:100px}
+.pb100{padding-bottom:100px}
+.mb0{margin-bottom:0!important}
+.mb5{margin-bottom:5px!important}
+.mb10{margin-bottom:10px!important}
+.mb15{margin-bottom:15px}
+.mb20{margin-bottom:20px}
+.mb25{margin-bottom:25px}
+.mb30{margin-bottom:30px}
+.mb35{margin-bottom:35px}
+.mb40{margin-bottom:40px}
+.mb45{margin-bottom:45px}
+.mb50{margin-bottom:50px}
+.mb55{margin-bottom:55px}
+.mb60{margin-bottom:60px}
+.mb65{margin-bottom:65px}
+.mb70{margin-bottom:70px}
+.mb75{margin-bottom:75px}
+.mb80{margin-bottom:80px}
+.mb100{margin-bottom:100px}
+.backTop{position:fixed;bottom:48px;right:20px;z-index:999}
+.backTop a{width:28px;height:28px;padding:18px;display:block;background:#fcaf0b;position:relative;-webkit-transition:1s;-moz-transition:1s;transition:1s;-webkit-transform:rotate(270deg);-moz-transform:rotate(270deg);-ms-transform:rotate(270deg);-o-transform:rotate(270deg);box-sizing:border-box}
+.backTop a span{display:block;bottom:0;width:12px;height:12px;left:0;right:-3px;margin:auto;font:normal normal normal 14px/1 FontAwesome;text-rendering:auto;font-size:26px;color:#fff;position:absolute;top:-14px;left:0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.backTop a span:after{content:"\f105"}
+.backTop a:hover span{right:-6px}
+.ErrPg{padding:0 30px;margin:50px 0;text-align:center}
+.ErrPg h3{font-size:22px;color:#000}
+.ErrPg h3 span{font-size:34px;color:#e84c44;padding-right:10px}
+.Errmsg :before{content:'OR';color:#474747;font-size:12px;font-weight:700;display:block;height:40px;width:40px;line-height:40px;border:1px solid #CCC;border-radius:50%;position:relative;text-align:center;top:0;left:0;right:0;bottom:0;margin:auto}
+.tanx{text-align:center;margin:50px 0}
+.tanx1p{font:48px/48px Arsenal-Regular;color:#53302e;padding:5px 0;margin-bottom:10px}
+.tanx2p{font-size:20px;margin-bottom:5px;font-weight:400}
+.tanx3p{font-size:18px;padding:5px 0}
+.comingSoon{padding:5% 0}
+.pageNav{width:25%;float:left}
+.pageNav li{float:left;margin:0 5px}
+.pageNav li a{float:left;font:11px Arsenal-Regular;color:#92999a;position:relative;padding:5px 8px;border:#c3d7da 1px solid;text-transform:uppercase}
+.pageNav li a:hover{color:#919ea0;border:#919ea0 1px solid}
+.pageNav li h6{font:11px Arsenal-Regular;color:#122545;border:#122545 1px solid;padding:5px 15px;text-transform:uppercase;background:rgba(255,255,255,0.5)}
+::-webkit-scrollbar{width:10px;background:transparent}
+::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);-webkit-border-radius:10px;border-radius:10px}
+::-webkit-scrollbar-thumb{-webkit-border-radius:10px;border-radius:10px;background:#53302e}
+::-webkit-scrollbar-thumb:window-inactive{background:transparent}
+.logo{float:left;width:145px;-webkit-transition:all 1s ease;-moz-transition:all 1s ease;-ms-transition:all 1s ease;-o-transition:all 1s ease;transition:all 1s ease}
+.logo img{width:100%}
+.sticky .logo{width:70px;-webkit-transition:all 1s ease;-moz-transition:all 1s ease;-ms-transition:all 1s ease;-o-transition:all 1s ease;transition:all 1s ease}
+.head_logo{display:block}
+.sticky_logo{display:none;-webkit-transition:all 1s ease;-moz-transition:all 1s ease;-ms-transition:all 1s ease;-o-transition:all 1s ease;transition:all 1s ease}
+.sticky .head_logo{display:none}
+.sticky .sticky_logo{display:block;-webkit-transition:all 1s ease;-moz-transition:all 1s ease;-ms-transition:all 1s ease;-o-transition:all 1s ease;transition:all 1s ease}
+.sticky .header_right{margin-top:1%;-webkit-transition:all 1s ease;-moz-transition:all 1s ease;-ms-transition:all 1s ease;-o-transition:all 1s ease;transition:all 1s ease}
+.header_right{width:295px;float:right;margin-top:5%;-webkit-transition:all 1s ease;-moz-transition:all 1s ease;-ms-transition:all 1s ease;-o-transition:all 1s ease;transition:all 1s ease}
+.share{width:110px;float:left;position:relative;font:16px Arsenal-Regular;color:#b7b7b7;padding:8px 0;padding-left:40px;border:#b7b7b7 1px solid}
+.share:before{width:18px;height:19px;content:"";position:absolute;top:7px;left:10px;background:url(../images/sprite.png) -5px -2px no-repeat}
+.share:hover{color:#ea9f00;border-color:#ea9f00}
+.share:hover:before{background-position:-31px -2px}
+.hEnq{width:160px;float:left;position:relative;font:16px Arsenal-Regular;color:#ea9f00;padding:8px 0;padding-left:40px;border:#ea9f00 1px solid;margin:0 15px}
+.hEnq:before{width:17px;height:15px;content:"";position:absolute;top:7px;left:10px;background:url(../images/sprite.png) -63px -4px no-repeat}
+.hEnq:hover{color:#b7b7b7;border-color:#b7b7b7}
+.hEnq:hover:before{background-position:-87px -4px}
+.menuIcon{display:block;position:relative;padding:9px 15px;padding-left:40px;background-color:#53302e;width:100px;height:35px;font:16px Arsenal-Regular;color:#fff;float:left}
+.menuIcon:hover{color:#fcaf0b}
+.menuIcon:hover i,.menuIcon:active i{background-position:-424px -12px}
+.menuIcon i{position:absolute;content:'';width:15px;height:11px;top:0;bottom:0;left:15px;right:auto;margin:auto;background:url(../images/sprite.png)no-repeat -405px -12px}
+.ovflhdn{overflow:hidden}
+.sidemenu-cont{width:500px;right:-500px;height:100%;background:url(../images/menu-bg.png) repeat;position:fixed;top:0;bottom:0;z-index:99999;padding:10% 0;display:block;-webkit-transition:all 1s ease;-moz-transition:all 1s ease;-ms-transition:all 1s ease;-o-transition:all 1s ease;transition:all 1s ease}
+.open-menu{right:0}
+.sideMenu{text-transform:none}
+.sideMenu li a.prnNm:hover{border-color:#de9912;background:url(../images/menu-hover.png) repeat}
+.sideMenu li a:hover{color:#000}
+.sideMenu li a.prnNm{display:block;font:36px Arsenal-Regular;color:#fff;padding:15px 0;padding-left:50px;border-left:transparent 5px solid}
+.sideMenu li ul{padding-bottom:7px;margin-bottom:24px;border-bottom:1px solid #FF9833}
+.sideMenu li ul li{margin-bottom:12px}
+.sideMenu li ul li a{font-size:14px;font-weight:300;color:#fff;line-height:18px;display:block}
+.closeBtn{position:absolute;top:35px;right:35px;width:30px;height:30px;background:transparent}
+.closeBtn:before{position:absolute;content:'';top:0;left:0;right:0;bottom:0;margin:auto;width:23px;height:17px;background:url(../images/sprite.png) no-repeat -454px -11px}
+.hmMnu .sideMenu li a.h_active{border-color:#de9912;background:url(../images/menu-hover.png) repeat}
+.abtMnu .sideMenu li a.au_active{border-color:#de9912;background:url(../images/menu-hover.png) repeat}
+.proMnu .sideMenu li a.pro_active{border-color:#de9912;background:url(../images/menu-hover.png) repeat}
+.galMnu .sideMenu li a.gal_active{border-color:#de9912;background:url(../images/menu-hover.png) repeat}
+.cntMnu .sideMenu li a.cnt_active{border-color:#de9912;background:url(../images/menu-hover.png) repeat}
+.f_logo{width:145px;float:left}
+.f_desc{width:300px;float:left;margin:0 30px;font:16px/26px Arsenal-Regular;color:#989595;letter-spacing:1px}
+.flinks p{font:15px/23px Arsenal-Regular;color:#4c4c4c;float:left}
+.flinks p span{float:left}
+.flinks a{font:15px/23px Arsenal-Regular;color:#4c4c4c;float:left}
+.flinks a:hover{color:#fcaf0b}
+.flinks h4{font:15px Arsenal-Regular;color:#53302e;text-transform:uppercase}
+.flinks h4 a{color:#53302e}
+.flinks h4:hover a{color:#fcaf0b}
+.qlinks{width:180px;margin-right:20px;float:left}
+.qlinks li{width:100%;float:left;margin-bottom:5px}
+.cnt_div{width:250px;float:right}
+.cnt_div h3{font:15px/20px Arsenal-Regular;color:#53302e;letter-spacing:1px}
+.social{float:left}
+.social a{float:left;margin-right:15px}
+.sm_icon{width:22px;float:left;height:22px;background:url(../images/sprite.png) no-repeat;position:relative}
+.fb{background-position:-152px -6px}
+.tw{background-position:-193px -7px}
+.gp{background-position:-235px -7px}
+.yt{background-position:-282px -5px}
+.ins{background-position:-126px -7px}
+.copyright{padding:10px 0;margin-top:20px}
+.highLights{padding:70px 0;float:left;width:100%}
+.highLights h1{margin:auto;padding-bottom:30px}
+.highLights ul{width:50%;float:left}
+.highLights li{color:#666;margin:0;font:18px/30px Arsenal-Regular;letter-spacing:1px;list-style-type:disc}
+.cr_div{width:100%;float:left;border-top:#ddd7d7 1px solid}
+.copyright p{width:35%;float:left;font:13px Arsenal-Regular;color:#4c4c4c;margin-top:6px}
+.copyright a{width:35%;float:right;padding:8px 35px 4px 0;background:url(../images/floret-logo.png) top right no-repeat;color:#4c4c4c;font:400 13px/16px Arsenal-Regular;text-align:right}
+.over_view{width:1550px;float:right;background:#eae6e6;padding-top:90px;padding-left:120px;padding-bottom:90px;position:relative}
+.over_view:before{width:464px;height:353px;content:"";position:absolute;bottom:92px;left:78px;background:url(../images/awards-bg.png) no-repeat}
+.ov_left{width:375px;float:left}
+.ov_left h3{font:18px Arsenal-Regular;color:#53302e;letter-spacing:4px}
+.ov_left p{font:14px/22px Arsenal-Regular;color:#5b5958}
+.ov_left img{display:inline-block}
+.ov_right{width:600px;float:left;margin-left:10%}
+.ov_right h2{font:42px/50px Arsenal-Bold;color:#53302e}
+.rm_link{width:140px;float:left;font:14px Arsenal-Regular;color:#666;padding:8px 0;padding-left:10px;text-transform:uppercase;position:relative;border:#53302e 1px solid;letter-spacing:1px;-webkit-transition:all 1s ease;-moz-transition:all 1s ease;-ms-transition:all 1s ease;-o-transition:all 1s ease;transition:all 1s ease}
+.rm_link::before{width:25px;height:100%;content:"+";position:absolute;top:0;right:0;background:#53302e;font-size:20px;color:#fff;line-height:30px;text-align:center;-webkit-transition:all 1s ease;-moz-transition:all 1s ease;-ms-transition:all 1s ease;-o-transition:all 1s ease;transition:all 1s ease}
+.rm_link:hover::before{background:#fcaf0b;-webkit-transition:all 1s ease;-moz-transition:all 1s ease;-ms-transition:all 1s ease;-o-transition:all 1s ease;transition:all 1s ease}
+.rm_link:hover{border-color:#fcaf0b;color:#fcaf0b;-webkit-transition:all 1s ease;-moz-transition:all 1s ease;-ms-transition:all 1s ease;-o-transition:all 1s ease;transition:all 1s ease}
+.pgwSlideshow{position:relative}
+.reqBg{width:100%;float:left;background:#eae6e6;padding:70px 0}
+.reqDiv{width:1070px;float:right}
+.req_left{width:550px;float:left}
+.reqLink{width:370px;float:right;padding:40px 0 40px 90px;border:#53302e 3px solid;font:28px Arsenal-Bold;color:#53302e;position:relative;text-transform:uppercase;letter-spacing:8px}
+.reqLink:before{width:41px;height:41px;content:"";position:absolute;top:45px;left:25px;background:url(../images/sprite.png) -11px -45px no-repeat}
+
+.book_div{width: 465px; float: right;}
+.book_div img{width: 100%;}
+
+.cpMain{width:49%;float:left}
+.cpMain img{width:100%;margin-bottom:45px}
+.cpMain h2{font:22px/31px Arsenal-Regular;color:#53302e;letter-spacing:2px;text-transform:uppercase}
+.cpMain h3{font:17px Arsenal-Regular;color:#a3a3a3;letter-spacing:2px}
+.whyBg{background:url(../images/why-us.jpg) center center no-repeat;height:550px;padding-top:130px}
+#whyus .item{margin:0 5%;text-align:center}
+#whyus .item h4{font:20px Arsenal-Regular;color:#fff;position:relative;margin-bottom:20px}
+#whyus .item h3{font:38px/46px Arsenal-Bold;color:#fff;position:relative}
+.tm_container{width:850px;margin:0 auto}
+#testim .item{text-align:center}
+#testim .item h2{font:30px PlayfairDisplay-Regular;color:#000;margin-bottom:60px}
+#testim .item h3{font:24px Arsenal-Regular;color:#53302e;margin-bottom:15px}
+#testim .item h4{font:14px Arsenal-Regular;color:#fcaf0b;text-transform:uppercase;letter-spacing:3px}
+.bookBg{background:url(../images/enquiry.jpg) center top no-repeat;height:auto;padding:100px 0}
+.book_container{width:770px;margin:0 auto}
+.bookBg h2{font:30px Arsenal-Regular;color:#fff;letter-spacing:4px;text-transform:uppercase}
+.book_form .group{width:100%;float:left;position:relative;margin-bottom:25px;margin-right:0}
+.book_form .field{width:100%;float:left;position:relative;font:16px Arsenal-Regular;color:#c88925;padding:2% 2% 2% 4%;border-bottom:#c88925 1px solid;box-sizing:border-box;background:transparent}
+.book_form .submit{float:left;border:none;font:20px Arsenal-Regular;color:#421d15;background:#fcaf0b;padding:10px 25px}
+.book_form .submit:hover{background:#ea9f00;color:#fff}
+.abtMnu section{background:#f2eded}
+.abtMain{width:1540px;float:right;background:#eae6e6;padding-bottom:230px}
+.abtDiv{width:760px;float:left;margin-top:70px;margin-left:200px}
+.abtDiv h2{font:42px/50px Arsenal-Bold;color:#53302e}
+.hl_txt{font:88px NoteraPersonalUseOnly;color:#d4d1d1;margin-left:33%}
+.vmBg{background:#fff;padding:7% 8%;position:relative;z-index:100;margin-top:-15%;float:left}
+.vmBg p{font:30px/40px PlayfairDisplay-Regular;color:#53302e;padding:0 6%;letter-spacing:1px}
+.vm_bor{border-top:#fcaf0b 1px solid;position:relative;margin:10% 0}
+.vm_bor:before{width:100px;height:30px;content:"AND";position:absolute;top:-10px;left:0;right:0;margin:auto;background:#fff;font:14px Arsenal-Regular;color:#fcaf0b;letter-spacing:6px}
+.vmBox{width:1450px;float:left;height:500px;background:#eae6e6;position:relative;z-index:5;margin-top:-22%}
+.bodMain{width:31%;float:left;margin:0 1%;text-align:center}
+.bodMain img{display:inline-block;margin-bottom:25px}
+.bodMain h2{font:21px Arsenal-Regular;color:#000;margin-bottom:10px}
+.bodMain h5{margin-bottom:25px;letter-spacing:5px}
+.awardBg{background:#fff;padding:10%}
+.awardBg p{padding:0 10%}
+.awardBg h2{font:44px/52px Arsenal-Bold;color:#53302e;padding:0 15%;letter-spacing:2px}
+.proMnu section{background:#f2eded;padding:60px 0}
+.proj_left{width:100%;float:left;background:#fff;height:auto;position:relative}
+.proj_right{width:31%;float:right;position:relative}
+.sidebar_wrapper{width:100%;position:relative;float:left;height:100%}
+#right_div{position:absolute;right:0;height:100%}
+#sidebar{width:370px}
+.pro_enq{width:100%;background:url(../images/sidebar-enq.jpg) no-repeat;background-size:100%;height:580px;padding:30px;padding-top:50px}
+.pro_enq h2{font:24px Arsenal-Regular;color:#fff;letter-spacing:10px;text-transform:uppercase}
+.pro_enq .group{width:100%;float:left;position:relative;margin-bottom:20px}
+.pro_enq .field{width:100%;float:left;position:relative;font:16px Arsenal-Regular;color:#c88925;padding:3% 3% 3% 4%;border-bottom:#c88925 1px solid;box-sizing:border-box;background:transparent}
+.pro_enq .submit{float:left;border:none;font:20px Arsenal-Regular;color:#421d15;background:#fcaf0b;padding:10px 25px;width:100%}
+.pro_enq .submit:hover{background:#ea9f00;color:#fff}
+.projMain{padding:50px 40px;border-bottom:#eae6e6 1px solid}
+.projMain h2{font:42px/50px Arsenal-Bold;color:#53302e}
+.floor h3{font:18px Arsenal-Bold;color:#292929;width:100%;text-align:center}
+#tab_highlights .etabs{margin:0;padding:0;background:transparent;width:100%;float:none;text-align:center}
+#tab_highlights .tab{display:inline-block;float:none}
+#tab_highlights .tab a{float:left;font:15px Arsenal-Regular;color:#b8b8b8;padding:10px 15px;display:block;text-transform:uppercase;border:#fff 1px solid;letter-spacing:1px}
+#tab_highlights .tab a:hover,#tab_highlights .tab a.active{background:#eae6e6;position:relative;color:#53302e;border-color:#53302e}
+#tab_highlights .tab_container{background:none;width:100%;float:left;padding-top:30px}
+#tab_highlights .tab_container h4{color:#292929;font:22px Arsenal-Bold}
+#tab_highlights .tab_container p{padding:0 8%}
+#tab_highlights .tab_container img{width:100%}
+.fapt{padding-top:0!important}
+.fapb{padding-bottom:0!important}
+.fapl{padding-left:0!important}
+.fapr{padding-right:0!important}
+.fa_div{width:25%;float:left;position:relative;padding:30px}
+.fa_div:before{width:80%;height:1px;background:#eeeaea;content:"";bottom:0;right:20px;position:absolute}
+.fa_div:after{width:1px;height:85px;background:#eeeaea;content:"";bottom:30px;right:0;position:absolute}
+.faB:before{display:none}
+.faR:after{display:none}
+.fa_div h3{font:18px Arsenal-Bold;color:#292929;width:100%;float:left;padding-top:10px;height:30px}
+.fa_icon{float:left;position:relative;width:55px;height:50px;background:url(../images/sprite.png) no-repeat}
+.fa1{background-position:2px -98px}
+.fa2{background-position:-75px -98px}
+.fa3{background-position:-143px -98px}
+.fa4{background-position:-239px -98px}
+.fa5{background-position:-326px -98px}
+.fa6{background-position:-428px -98px}
+.fa7{background-position:-1px -155px}
+.fa8{background-position:-67px -155px}
+.fa9{background-position:-143px -155px}
+.fa10{background-position:-222px -155px}
+.fa11{background-position:-306px -155px}
+.fa12{background-position:-400px -155px}
+#floor_plans .etabs{margin:0;padding:0;background:transparent;width:100%;float:none;text-align:center}
+#floor_plans .tab{display:inline-block;float:none}
+#floor_plans .tab a{float:left;font:14px Arsenal-Regular;color:#b8b8b8;padding:10px 15px;display:block;text-transform:uppercase;border:#fff 1px solid;letter-spacing:1px}
+#floor_plans .tab a:hover,#floor_plans .tab a.active{background:#eae6e6;position:relative;color:#53302e;border-color:#53302e}
+#floor_plans .tab_container{background:none;width:100%;float:left;margin-top:30px;border:#ddd6d5 1px solid;height:100%;position:relative}
+.fp_left{width:65%;float:left;text-align:center;padding:24px 0;position:relative}
+.fp_left img{display:inline-block}
+.fp_left .ovrlay{position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.37);opacity:0}
+.fp_left span.ovrlay{background-color:rgba(0,0,0,0.32);-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease;transition:all .5s ease;background:url(../images/zoom.png) center no-repeat;background-color:rgba(0,0,0,0.32)}
+.fp_left:hover span.ovrlay{opacity:1}
+.fp_right{width:35%;float:right;border-left:#ddd6d5 1px solid;background:#f4f2f2;height:100%;position:relative}
+.fp_desc{padding:12.75px 0;padding-left:20px;position:relative;border-bottom:#ddd6d5 1px solid}
+.fp_desc.last{border-bottom:none}
+.fp_desc img{float:left;max-width:30px;padding-right:10px}
+.fp_desc h3{font:18px Arsenal-Bold;color:#292929;text-align:left;padding-top:2px}
+.fp_desc h4{font:14px Arsenal-Regular;color:#fcaf0b;margin-bottom:5px}
+.fp_icon{width:37px;height:35px;background:url(../images/sprite.png) no-repeat;position:absolute;top:6px;left:25px}
+.fp1{background-position:-7px -216px}
+.fp2{background-position:-68px -218px}
+.fp3{background-position:-128px -219px}
+.fp4{background-position:-195px -221px}
+.int_div{width:33.3%;float:left;position:relative;padding:30px}
+.int_div:before{width:80%;height:1px;background:#eeeaea;content:"";bottom:0;right:40px;position:absolute}
+.int_div:after{width:1px;height:75%;background:#eeeaea;content:"";bottom:30px;right:0;position:absolute}
+.int_div h3{font:20px Arsenal-Bold;color:#292929;width:100%;float:left;padding:10px 0}
+.int_div p{width:100%;float:left}
+.int_icon{float:left;position:relative;width:50px;height:50px;background:url(../images/sprite.png) no-repeat}
+.int1{background-position:-6px -262px}
+.int2{background-position:-78px -268px}
+.int3{background-position:-142px -268px}
+.int4{background-position:-222px -268px}
+.int5{background-position:-306px -268px}
+.int6{background-position:-398px -268px}
+.int7{background-position:-9px -328px}
+.int8{background-position:-74px -331px}
+.int9{background-position:-140px -329px}
+.int10{background-position:-212px -329px}
+.aimMain{width:32%;float:left;margin:0 .5%}
+.aimMain img{width:100%;margin-bottom:15px}
+.aimMain h3{font:18px Arsenal-Bold;color:#292929}
+.galMnu section{background:#f2eded;padding:60px 0}
+.cntMnu section{background:#f2eded;padding:60px 0}
+.imgGal{width:100%;float:left;position:relative}
+.imgGal li{width:24%;float:left;margin:.5%;position:relative;box-sizing:border-box}
+.imgGal li a{position:relative;overflow:hidden;float:left;width:100%}
+.imgGal li a img{width:100%;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease;transition:all .5s ease;float:left}
+.imgGal li:hover a img{webkit-transform:scale(1.1);-moz-transform:scale(1.1);-ms-transform:scale(1.1);-o-transform:scale(1.1);transform:scale(1.1);-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease;transition:all .5s ease}
+.ovrlay{position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.37);opacity:0}
+.imgGal li a span.ovrlay{background-color:rgba(0,0,0,0.32);-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease;transition:all .5s ease;background:url(../images/zoom.png) center no-repeat;background-color:rgba(0,0,0,0.32)}
+.imgGal li:hover span.ovrlay{opacity:1}
+.cnt_left{width:38%;float:left}
+.cnt_right{width:60%;float:right}
+.contact_add h3{font:30px Arsenal-Regular;color:#292929;margin-bottom:15px}
+.contact_add h4{font:20px Arsenal-Regular;color:#292929;margin-bottom:15px}
+.contact_add h5{font:18px Arsenal-Regular;color:#00c6ff}
+.contact_add p{color:#232323;font:15px/25px Arsenal-Regular}
+.contact_add a{color:#232323;font:15px/25px Arsenal-Regular}
+.contact_add a:hover{color:#fcaf0b}
+.contactIcon{width:100%;float:left;padding-left:40px;position:relative;margin-bottom:15px}
+.location{width:20px;height:32px;position:absolute;top:2px;left:5px;background:url(../images/con-sprite.png) -3px -3px no-repeat}
+.mailIcon{width:25px;height:17px;position:absolute;top:6px;left:2px;background:url(../images/con-sprite.png) -73px -7px no-repeat}
+.phoneIcon{width:25px;height:25px;position:absolute;top:2px;left:2px;background:url(../images/con-sprite.png) -36px -6px no-repeat}
+.webIcon{width:25px;height:25px;position:absolute;top:2px;left:2px;background:url(../images/con-sprite.png) -111px -5px no-repeat}
+.faxIcon{width:25px;height:25px;position:absolute;top:2px;left:2px;background:url(../images/con-sprite.png) -147px -6px no-repeat}
+.cont_form{width:100%;float:left}
+.cont_form .group{width:49%;float:left;position:relative;margin-bottom:15px;margin-right:0}
+.cont_form .field{width:100%;float:left;position:relative;font:400 16px Lato,sans-serif;color:gray;padding:4% 2% 4% 10%;border:#C5C1C1 1px solid}
+.cont_form .msg_height{height:150px!important;padding:2% 5%!important}
+.cont_form .submit{float:right;border:none;font:22px Arsenal-Regular;color:#fff;background:#53302e;padding:10px 25px}
+.cont_form .submit:hover{background:#fcaf0b;color:#53302e}
+.pf_icon{width:20px;height:20px;position:absolute;top:16px;left:10px;background:url(../images/contact-icon.png) no-repeat}
+.pf_name{background-position:0 0}
+.pf_mail{background-position:1px -125px}
+.pf_phone{background-position:1px -41px}
+.pf_location{background-position:1px -171px}
+.pf_msg{background-position:1px -259px}
+#quick_desc,#quick_name,#quick_email,#quick_phone,#quick_location{font:16px Arsenal-Regular!important;color:#c88925!important;padding:2% 2% 2% 4% !important;border:none!important;border-bottom:#c88925 1px solid!important;box-sizing:border-box;background:transparent!important;box-shadow:none!important;width:100%!important;margin-right:0!important;margin-left:0!important}
+#quick_verify_code{height:35px!important}
+.mini-q-form-btm .cptcha-img{height:35px!important}
+#quick_btnsubmit{font:20px Arsenal-Regular!important;color:#421d15!important;background:#fcaf0b!important;padding:6px 25px!important;border:none!important;text-shadow:none!important;float:left!important}
+#quick_btnsubmit:hover{background:#ea9f00!important;color:#fff!important}
+.desk_social{display:block}
+.res_social{display:none}
+.aim_list li{width:100%;float:left;position:relative;font:20px/30px Arsenal-Regular;color:#000;padding-left:25px;margin-bottom:5px;box-sizing:border-box}
+.aim_list li:before{width:10px;height:10px;content:"";position:absolute;top:10px;left:0;border-radius:50%;background:#4d2b29}
+.rooms{position:relative}
+.rooms img{width:100%}
+.imgTxt{width:100%;position:absolute;padding:2% 3%;padding-top:20%;background:-webkit-linear-gradient(bottom,#000 10%,transparent 100%);left:0;bottom:0;font:24px Arsenal-Regular;color:#fff;text-align:center;letter-spacing:10px;text-transform:uppercase}
+.cmnContMain{width:400px;position:fixed;right:-400px;top:150px;z-index:9999;-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out;transition:all .5s ease-in-out}
+.cmnContMain .open{color:#fff;font:12px Arsenal-Regular;text-transform:uppercase;display:inline-block;position:absolute;top:0;left:-65px;background:#ea9f00}
+.cmnContMain .open i{height:40px;display:block;background:url(../images/enquiry.png) no-repeat center #ea9f00}
+.cmnContMain .open span{display:block;padding:10px}
+.cmnContMain .close{color:#fff;font:14px Arsenal-Regular;text-transform:uppercase;display:inline-block;padding:10px;position:absolute;top:0;right:0;background:#ea9f00}
+.subject{font:20px/30px Arsenal-Regular;color:#000;padding-left:30PX}
+.locate_frame{width:100%;height:480px;border:none}
+.hmMnu .cmnContMain,.cntMnu .cmnContMain{display:none}
+.cu_addressWrap p.title{display:none!important}
+
+.yt_frame{width: 560px; height: 315px; display: inline-block; border: none;}
+
+
+@media all and (max-width: 1600px) {
+.abtMain{width:1385px}
+.vmBox{width:83%;height:450px}
+}
+@media all and (max-width: 1366px) {
+.over_view{width:90%;padding-left:70px}
+.ov_right{width:50%}
+.over_view:before{left:27px}
+.abtMain{width:93%}
+.abtDiv{margin-left:13%}
+.pro_enq .group{margin-bottom:20px}
+.pro_enq{height:550px}
+}
+@media all and (max-width: 1280px) {
+.reqDiv{width:90%}
+.reqLink{width:315px}
+.sidemenu-cont{width:400px;right:-400px}
+.sideMenu li a.prnNm{font-size:30px}
+.abtMain{width:96%}
+#whyus .item h3{font-size:34px}
+}
+@media all and (max-width: 1024px) {
+.container{width:96%}
+.over_view{padding:5%;width:100%}
+.ov_left{width:30%}
+h5{line-height:24px}
+h1{letter-spacing:5px}
+.ov_right{width:60%;margin-left:5%}
+.reqBg{padding:5% 0}
+.reqDiv{width:100%}
+.mb100{margin-bottom:70px}
+.mb80{margin-bottom:50px}
+.mb60{margin-bottom:30px}
+.mb50{margin-bottom:30px}
+.mb45{margin-bottom:30px}
+.whyBg{padding:80px 0;height:auto}
+.bookBg{padding:80px 0;height:auto}
+.cnt_div{width:100%;margin-top:3%}
+.res_social{width:28%;float:right}
+.res_cnt{width:45%;float:left;margin-left:18%}
+.abtMain{width:98%}
+.abtDiv{width:75%;margin-left:10%}
+.vmBox{display:none}
+#sidebar{width:305px}
+.pro_enq h2{font-size:17px}
+.projMain h2{font-size:32px;line-height:42px}
+#tab_highlights .tab a{padding:10px;font-size:12px}
+.fa_div h3{font-size:14px}
+.desk_social{display:none}
+.res_social{display:block}
+}
+@media all and (max-width: 995px) {
+.sidemenu-cont{width:350px;right:-350px}
+.sideMenu li a.prnNm{font-size:26px}
+.ov_left{width:50%;margin:0 auto;float:none}
+.ov_right{width:100%;margin-left:0;margin-top:3%}
+.req_left{width:100%}
+.book_container{width:80%}
+.res_cnt{width:58%;margin-left:0}
+.res_social{width:31%}
+.abtDiv h2{font-size:32px}
+.hl_txt{margin-left:30%;font-size:70px}
+.abtMain{padding-bottom:100px}
+.vmBg{margin-top:-10%}
+.vmBg p{font-size:25px;line-height:35px}
+.awardBg h2{font-size:35px;line-height:45px}
+#sidebar{width:100%;float:left;position:relative!important}
+.proj_right{width:100%;position:relative!important}
+.pro_enq{height:auto;padding:10%}
+.proj_left{width:100%}
+.ov_right h2{font-size:32px;line-height:42px}
+.int_div{padding:20px}
+.int_div p{font-size:16px}
+}
+@media all and (max-width: 767px) {
+.highLights{width:90%}
+.highLights ul{width:100%;float:left;margin-left:35px}
+.sticky .logo{width:50px}
+h1{letter-spacing:2px;font-size:20px}
+footer{padding-top:50px}
+.ov_left{width:80%}
+.ov_right{margin-top:8%}
+.reqLink{padding-top:25px;padding-bottom:25px}
+.reqLink:before{top:33px}
+.cpMain{width:100%}
+.mb100{margin-bottom:40px}
+.qlinks{width:50%;margin-right:0;margin-top:8%}
+.cr_div{text-align:center}
+.copyright p{width:100%;margin-bottom:10px}
+.copyright a{display:inline-block;float:none}
+.sidemenu-cont{width:80%;right:-100%}
+.sideMenu li a.prnNm{font-size:22px;padding:12px 0;padding-left:30px}
+.closeBtn{top:20px}
+.abtDiv h2{font-size:28px;line-height:38px}
+.hl_txt{display:none}
+#whyus .item h3{font-size:28px;line-height:38px}
+.awardBg h2{font-size:30px;line-height:40px}
+.projMain h2{font-size:28px;line-height:38px}
+#floor_plans .tab a{padding:12px}
+.int_div{width:100%;padding:15px!important}
+.int_div:before{width:100%;right:0}
+.int_div:after{display:none}
+.aimMain{width:48%;margin:2% 1%}
+.imgGal li{width:49%}
+.over_view:before{display:none}
+.fp_left{width:100%}
+.fp_right{width:100%;border-left:none}
+.fp_left img{max-width:100%}
+.fa_div{padding:3%}
+.fa_div h3{font-size:12px;height:40px}
+.bodMain{width:98%;margin-bottom:50px}
+.cmnContMain{display:none}
+.imgTxt{font-size:20px}
+.floor h3 span{float:left!important;width:100%;margin:5px 0}
+}
+@media all and (max-width: 479px) {
+footer{padding-top:30px}
+.f_desc{width:100%;margin:0;padding:1% 2%}
+.qlinks{width:100%}
+.res_cnt{width:100%}
+.res_social{width:100%}
+.copyright a{width:70%}
+.hEnq{display:none}
+.header_right{width:100px}
+.ov_right h2{font-size:26px;line-height:36px}
+.abtDiv h2{font-size:26px;line-height:36px}
+.vmBg p{font-size:18px;line-height:28px}
+#whyus .item h3{font-size:26px;line-height:36px}
+.reqLink{width:100%;margin-top:3%}
+.bookBg h2{line-height:34px}
+.awardBg{padding:8% 2%}
+.awardBg h2{padding:0;font-size:25px;line-height:35px}
+.fp_desc{padding-left:55px}
+.fp_icon{left:10px}
+.projMain{padding:8% 2%}
+.fa_div{width:50%}
+.fa_div:after{display:none}
+.aimMain{width:98%}
+}

@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+#slide {min-height: 550px;position:relative;width: 100%; float:left;z-index: 2;}
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider {margin: 0; padding: 0;}
+.flexslider .slides > li {display: none; position: relative; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {margin: 0 auto; position: relative; width: 100%;}
+.flex-viewport {}
+.loading .flex-viewport {max-height: 300px;}
+.flexslider .slides {zoom: 1;}
+/* Direction Nav */
+.flex-direction-nav a {width: 41px; height:75px; margin: 0px 0 0; display: block;  position: absolute;  cursor: pointer;/* text-indent: -9999px;*/z-index:99; color: #fff; -webkit-transform: rotate(90deg);  transform: rotate(90deg);}
+.flex-direction-nav .flex-prev {right: 2%; top:37%;/*background:url(../images/prev.png) no-repeat 0 0;*/}
+.flex-direction-nav .flex-next {right: 2%; top:46%;/*background:url(../images/next.png) no-repeat 0 0;*/ }
+
+.flex-direction-nav .flex-next:hover, .flex-direction-nav .flex-prev:hover{background-position: 0 0; color: #fcaf0b;}
+/* Control Nav */
+
+.flex-control-nav {position: absolute; overflow: hidden; bottom:3%; text-align: center;z-index:999;width: 100%;}
+.flex-control-nav li {margin: 0 5px 0 0;display: inline-block; float: none;}
+.flex-control-paging li a {width: 15px; height: 15px; display: block; cursor: pointer; color: #000; text-decoration: line-through; line-height: 20px;position: relative; text-indent: -9999px;z-index:99; background: #243141; border-radius: 50%;}
+.flex-control-paging li a:hover, .flex-control-paging li a.flex-active{color: #18b8e6; text-decoration: none;background: #fcaf0b;}
+.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.flex-control-thumbs li {width: 25%; float: left; margin: 0;}
+.flex-control-thumbs img {width: 100%; display: block; cursor: pointer;}
+.flex-control-thumbs img:hover {opacity: 1;}
+.flex-control-thumbs .active {opacity: 1; cursor: default;}
+
+
+.banner { overflow: hidden;position: absolute;left:7% ; top:30%; width: 330px; z-index: 15; }
+.banner h1 {
+    font: 20px/26px 'Arsenal-Regular';
+    color: #fff;
+    text-align: left;
+    text-transform: none;
+    letter-spacing: 1px;
+}
+.banner h4 {
+    font: 30px/38px 'Arsenal-Bold';
+    color: #fff;
+    padding-bottom: 30px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+.banner h4:after{width: 70px; height: 5px; content: ""; position: absolute; bottom: 0; left: 0; background: #fff;}
+.banner h4 span{color: #fcaf0b;}
+/*==================Responsive========================*/
+@media all and (max-width: 1600px) {
+.flex-direction-nav .flex-prev{top: 35%;}
+}
+@media only screen and (max-width: 1366px){
+	.flex-direction-nav .flex-prev{top: 33%;}
+}
+@media only screen and (max-width: 1280px){
+}
+@media only screen and (max-width: 1024px){
+#slide{min-height: auto;}
+.flex-direction-nav .flex-prev{top: 30%;}
+.banner{top: 15%;}
+.banner h4{font-size: 36px; line-height: 42px;}
+}
+@media only screen and (max-width: 995px) {/*tablet portrait*/
+	.banner{top: 30%;}
+.flex-direction-nav .flex-prev{top: 25%; right: 4%;}
+.flex-direction-nav .flex-next{right: 4%;}
+}
+@media only screen and (max-width: 767px) {/*mobile landscape*/
+.flex-direction-nav a{display: none;}	
+.banner{display: none;}	
+}
+@media only screen and (max-width: 479px) {/*mobile portrait*/
+.banner{display: none;}
+}
