@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>next test</title>
+<title>test one</title>
 <meta name="Description" content="" /> 
 <meta name="Keywords" content="" /> 
 <meta name="robots" content="index,follow" /> 
